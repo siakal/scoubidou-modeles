@@ -1,0 +1,13 @@
+Modèle d'alignement des mots en français pour Scoubidou
+
+Ce paquet est une conversion Core ML, quantifiée en int8, du modèle
+jonatasgrosman/wav2vec2-large-xlsr-53-french (révision
+7c79e105a6525d38e1e69f640b974b4a679723cc), publié sous licence Apache 2.0 :
+https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-french
+
+Modifications apportées : conversion au format Core ML (.mlpackage),
+poids en float16 puis quantification linéaire int8, entrée fixe de
+10 secondes à 16 kHz. Les poids n'ont pas été réentraînés.
+
+Le modèle d'origine est fondé sur facebook/wav2vec2-large-xlsr-53
+(licence Apache 2.0).
